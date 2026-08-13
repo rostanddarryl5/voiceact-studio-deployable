@@ -99,7 +99,10 @@ async def align(
                     "MFA_ROOT_DIR": MFA_ROOT,
                     "PYTHONPATH": os.pathsep.join(
                         part
-                        for part in ("/service/app", os.environ.get("PYTHONPATH", ""))
+                        for part in (
+                            str(Path(__file__).resolve().parent),
+                            os.environ.get("PYTHONPATH", ""),
+                        )
                         if part
                     ),
                     "VOICEACT_MFA_PHONE_CONFIDENCE": "1",
