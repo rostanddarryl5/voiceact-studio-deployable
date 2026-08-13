@@ -1,0 +1,222 @@
+[
+  {
+    "id": "voxpopuli",
+    "name": "VoxPopuli",
+    "languages": ["fr", "multilingual"],
+    "content": "parliamentary speech",
+    "timing": "segment",
+    "emotionLabels": false,
+    "license": "CC0 data; verify European Parliament source notice",
+    "commercialStatus": "candidate",
+    "url": "https://github.com/facebookresearch/voxpopuli"
+  },
+  {
+    "id": "common-voice-fr",
+    "name": "Common Voice French",
+    "languages": ["fr"],
+    "content": "multi-speaker read speech",
+    "timing": "clip",
+    "emotionLabels": false,
+    "license": "CC0",
+    "commercialStatus": "candidate",
+    "url": "https://mozilladatacollective.com/datasets/cmn5zugst00w3nv07upovf2bg"
+  },
+  {
+    "id": "mls-fr",
+    "name": "Multilingual LibriSpeech French",
+    "languages": ["fr"],
+    "content": "audiobook narration",
+    "timing": "segment",
+    "emotionLabels": false,
+    "license": "CC BY 4.0; territorial work review required",
+    "commercialStatus": "candidate",
+    "url": "https://www.openslr.org/94/"
+  },
+  {
+    "id": "crema-d",
+    "name": "CREMA-D",
+    "languages": ["en"],
+    "content": "acted audiovisual sentences",
+    "timing": "clip",
+    "emotionLabels": true,
+    "license": "ODbL 1.0 and DbCL 1.0",
+    "commercialStatus": "legal-review",
+    "url": "https://github.com/CheyneyComputerScience/CREMA-D"
+  },
+  {
+    "id": "blender-open-movies",
+    "name": "Blender Open Movies",
+    "languages": ["en", "multilingual subtitles"],
+    "content": "open animated and live-action films",
+    "timing": "subtitle-or-custom-alignment",
+    "emotionLabels": false,
+    "license": "usually CC BY; verify each production",
+    "commercialStatus": "candidate",
+    "url": "https://video.blender.org/c/blender_open_movies/videos"
+  },
+  {
+    "id": "ravdess",
+    "name": "RAVDESS",
+    "languages": ["en"],
+    "content": "acted speech and song",
+    "timing": "clip",
+    "emotionLabels": true,
+    "license": "CC BY-NC-SA 4.0; commercial license available",
+    "commercialStatus": "negotiate",
+    "url": "https://zenodo.org/records/1188976"
+  },
+  {
+    "id": "iemocap",
+    "name": "IEMOCAP",
+    "languages": ["en"],
+    "content": "acted and improvised dyadic dialogue",
+    "timing": "utterance",
+    "emotionLabels": true,
+    "license": "USC data release form",
+    "commercialStatus": "research-or-negotiate",
+    "url": "https://sail.usc.edu/iemocap/"
+  },
+  {
+    "id": "gemep",
+    "name": "GEMEP",
+    "languages": ["fr", "nonverbal"],
+    "content": "professional acted affect portrayals",
+    "timing": "clip",
+    "emotionLabels": true,
+    "license": "research access agreement",
+    "commercialStatus": "negotiate",
+    "url": "https://www.unige.ch/cisa/gemep"
+  },
+  {
+    "id": "cinemo",
+    "name": "CINEMO",
+    "languages": ["fr"],
+    "content": "dubbing of emotional movie scenes",
+    "timing": "segment",
+    "emotionLabels": true,
+    "license": "verify with corpus owners",
+    "commercialStatus": "research-or-negotiate",
+    "url": "https://aclanthology.org/L10-1334/"
+  },
+  {
+    "id": "cmu-moseas",
+    "name": "CMU-MOSEAS",
+    "languages": ["fr", "es", "pt", "de"],
+    "content": "in-the-wild YouTube monologues",
+    "timing": "sentence",
+    "emotionLabels": true,
+    "license": "EULA; public non-invertible features",
+    "commercialStatus": "research",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106386/"
+  },
+  {
+    "id": "howto100m",
+    "name": "HowTo100M",
+    "languages": ["multilingual"],
+    "content": "narrated instructional creator videos",
+    "timing": "ASR clip",
+    "emotionLabels": false,
+    "license": "source-video rights not transferred",
+    "commercialStatus": "internal-research-only",
+    "url": "https://www.di.ens.fr/willow/research/howto100m/"
+  },
+  {
+    "id": "movienet",
+    "name": "MovieNet",
+    "languages": ["en", "multilingual subtitles"],
+    "content": "movie scripts, subtitles and annotations",
+    "timing": "subtitle-scene-script",
+    "emotionLabels": false,
+    "license": "dataset agreement; movies excluded",
+    "commercialStatus": "methodology-only",
+    "url": "https://movienet.github.io/"
+  },
+  {
+    "id": "mad",
+    "name": "MAD",
+    "languages": ["en"],
+    "content": "movie audio descriptions",
+    "timing": "sentence-segment",
+    "emotionLabels": false,
+    "license": "NDA; copyrighted movies excluded",
+    "commercialStatus": "methodology-only",
+    "url": "https://github.com/Soldelli/MAD"
+  },
+  {
+    "id": "siwis-fr",
+    "name": "SIWIS French Speech Synthesis Database",
+    "languages": ["fr"],
+    "content": "9750 high-quality utterances by a professional French voice talent; neutral, expressive and emphasised styles",
+    "timing": "HTS phonetic labels plus VoiceAct word and MFA alignment",
+    "emotionLabels": false,
+    "license": "CC BY 4.0",
+    "commercialStatus": "licensed-with-attribution",
+    "url": "https://doi.org/10.7488/ds/1705"
+  },
+  {
+    "id": "eve-fr-en",
+    "name": "EVE Emotional Validated Expressions",
+    "languages": ["fr", "en"],
+    "content": "4100 acted audiovisual recordings across ten emotions and neutral, two arousal levels",
+    "timing": "utterance",
+    "emotionLabels": true,
+    "license": "license review required before commercial product use",
+    "commercialStatus": "research-only-pending-review",
+    "url": "https://doi.org/10.58119/ULG/VREIOB"
+  },
+  {
+    "id": "m-ailabs-fr",
+    "name": "M-AILABS Speech Dataset French",
+    "languages": ["fr"],
+    "content": "about 190 hours of French audiobook narration with speaker-dependent quality",
+    "timing": "utterance with transcript",
+    "emotionLabels": false,
+    "license": "permissive M-AILABS data license allowing commercial use with notice and non-endorsement requirements",
+    "commercialStatus": "candidate-clip-level-provenance-review",
+    "url": "https://github.com/imdatceleste/m-ailabs-dataset"
+  },
+  {
+    "id": "hifi-tts-en",
+    "name": "Hi-Fi Multi-Speaker English TTS Dataset",
+    "languages": ["en"],
+    "content": "291.6 hours of high-SNR audiobook narration from ten speakers",
+    "timing": "utterance with transcript",
+    "emotionLabels": false,
+    "license": "CC BY 4.0",
+    "commercialStatus": "licensed-with-attribution-supplementary",
+    "url": "https://www.openslr.org/109/"
+  },
+  {
+    "id": "daps-en",
+    "name": "Device and Produced Speech Dataset",
+    "languages": ["en"],
+    "content": "professional studio and consumer-device recordings from twenty speakers",
+    "timing": "script and recording",
+    "emotionLabels": false,
+    "license": "CC BY-NC 4.0",
+    "commercialStatus": "research-only-noncommercial",
+    "url": "https://archive.org/details/daps_dataset"
+  },
+  {
+    "id": "cafe-fr-ca",
+    "name": "Canadian French Emotional Speech Dataset",
+    "languages": ["fr-CA"],
+    "content": "six sentences by twelve actors across six emotions and neutral",
+    "timing": "utterance",
+    "emotionLabels": true,
+    "license": "CC BY-NC-SA 4.0",
+    "commercialStatus": "research-only-noncommercial",
+    "url": "https://doi.org/10.5281/zenodo.1219621"
+  },
+  {
+    "id": "eu-emotion-voice",
+    "name": "EU-Emotion Voice Database",
+    "languages": ["en", "sv", "he"],
+    "content": "professional actors portraying twenty emotional states plus neutral",
+    "timing": "utterance",
+    "emotionLabels": true,
+    "license": "freely available for academic research purposes",
+    "commercialStatus": "research-only-noncommercial",
+    "url": "https://www.repository.cam.ac.uk/items/e5988693-2863-41dd-bc76-63d517b53f68"
+  }
+]

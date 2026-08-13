@@ -1,0 +1,34 @@
+{
+  "name": "voiceact-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:engine": "tsc --module commonjs --moduleResolution node --target ES2022 --outDir .tmp-engine-test --noEmit false --incremental false --esModuleInterop --skipLibCheck src/lib/types.ts src/lib/audio-analysis.ts src/lib/pronunciation-engine.ts src/lib/voice-engine.ts src/lib/lessons.ts src/lib/curriculum.ts src/lib/prosody.ts src/lib/diction-rush.ts && node --test tests/*.test.mjs",
+    "test:corpus": "tsc --module commonjs --moduleResolution node --target ES2022 --rootDir src --outDir .tmp-corpus-test --noEmit false --incremental false --esModuleInterop --skipLibCheck src/lib/tts-corpus.ts src/data/tts-voice-profiles.ts src/data/tts-reference-scripts-creator.ts src/data/tts-reference-scripts-dubbing.ts src/data/tts-reference-corpus.ts && node --test tests/tts-corpus.test.mjs",
+    "test:exercise-model": "tsc --module commonjs --moduleResolution node --target ES2022 --rootDir src --outDir .tmp-exercise-model-test --noEmit false --incremental false --esModuleInterop --skipLibCheck src/lib/types.ts src/lib/audio-analysis.ts src/lib/pronunciation-engine.ts src/lib/voice-engine.ts src/lib/lessons.ts src/lib/curriculum.ts src/lib/tts-corpus.ts src/data/tts-voice-profiles.ts src/data/tts-reference-scripts-creator.ts src/data/tts-reference-scripts-dubbing.ts src/data/tts-reference-corpus.ts src/data/approved-reference-audio.ts src/data/reference-audio-bank.ts src/lib/diction-rush.ts src/lib/exercise-model.ts src/lib/phonetic-drill-model.ts src/lib/diagnostic-exercise-model.ts src/lib/warmup-exercise-model.ts src/lib/articulation-lab-model.ts src/lib/echo-studio-model.ts src/lib/server/gemini-tts.ts && node --test tests/exercise-model.test.mjs tests/phonetic-drill-model.test.mjs tests/diagnostic-exercise-model.test.mjs tests/warmup-exercise-model.test.mjs tests/articulation-lab-model.test.mjs tests/echo-studio-model.test.mjs tests/gemini-tts-pipeline.test.mjs tests/reference-audio-bank.test.mjs",
+    "verify:exercise-model": "npm run test:exercise-model && npm run lint && npm run build",
+    "tts:batch": "node scripts/generate_gemini_tts_batch.mjs",
+    "tts:review": "node scripts/review_reference_audio.mjs",
+    "corpus:profile": "node scripts/build-timing-profile.mjs",
+    "voices:download": "python scripts/download_voice_reference_pack.py"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

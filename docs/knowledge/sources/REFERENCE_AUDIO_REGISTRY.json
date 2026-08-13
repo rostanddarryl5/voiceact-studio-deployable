@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-17",
+  "sources": [
+    {
+      "id": "siwis-001",
+      "status": "licensed",
+      "language": "fr",
+      "speaker": "professional French voice talent",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://doi.org/10.7488/ds/1705",
+      "localAudio": "public/references/siwis/emph_book_s01_0001.wav",
+      "transcription": "output/references/siwis/emph_book_s01_0001.transcription.json",
+      "durationSeconds": 5,
+      "wordCount": 20,
+      "phonemeCount": 50,
+      "use": ["storytelling", "emphasis", "variable_timing"],
+      "attribution": "Yamagishi, Honnet, Garner and Lazaridis; University of Edinburgh CSTR"
+    },
+    {
+      "id": "eve-fr",
+      "status": "research_only_pending_license_review",
+      "language": "fr",
+      "sourceUrl": "https://doi.org/10.58119/ULG/VREIOB",
+      "use": ["emotion_validation"],
+      "note": "Ne pas diffuser dans le SaaS commercial avant confirmation écrite de la licence."
+    },
+    {
+      "id": "voiceact-original",
+      "status": "commission_required",
+      "language": "fr",
+      "use": ["short", "longform", "news", "horror", "advertising", "film_dubbing", "animation", "game"],
+      "note": "Références exactes à enregistrer avec cession de droits SaaS et annotations pédagogiques."
+    }
+  ]
+}

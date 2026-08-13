@@ -1,0 +1,9 @@
+Lien stable VoiceAct Vercel :
+https://voiceact-vercel-deploy.vercel.app
+
+Statut :
+- Interface web publique déployée sur Vercel.
+- Ce lien ne dépend plus de Cloudflare/ngrok ni du PC allumé.
+- Le moteur vocal local/MFA n'est pas encore hébergé sur Vercel : l'analyse vocale complète reste à raccorder à un backend public.
+
+Déploiement créé le : 2026-08-09

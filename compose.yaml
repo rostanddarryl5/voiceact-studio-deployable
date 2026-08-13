@@ -1,0 +1,121 @@
+name: voiceact
+
+services:
+  phonemes:
+    image: voiceact-phonemes:${VOICEACT_RELEASE:-local}
+    build:
+      context: ./mfa-service
+    restart: unless-stopped
+    init: true
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      VOICEACT_INTERNAL_TOKEN: ${VOICEACT_INTERNAL_TOKEN:?Set VOICEACT_INTERNAL_TOKEN in .env}
+      MFA_ROOT_DIR: /models
+    expose:
+      - "8020"
+    healthcheck:
+      test: ["CMD", "micromamba", "run", "-n", "base", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8020/health/ready', timeout=10)"]
+      interval: 20s
+      timeout: 15s
+      start_period: 30s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    stop_grace_period: 30s
+
+  speech:
+    image: voiceact-speech:${VOICEACT_RELEASE:-local}
+    build:
+      context: ./speech-service
+      args:
+        INSTALL_WHISPERX: ${VOICEACT_INSTALL_WHISPERX:-true}
+    restart: unless-stopped
+    init: true
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      VOICEACT_MODEL_SIZE: ${VOICEACT_MODEL_SIZE:-small}
+      VOICEACT_DEVICE: ${VOICEACT_DEVICE:-cpu}
+      VOICEACT_COMPUTE_TYPE: ${VOICEACT_COMPUTE_TYPE:-int8}
+      VOICEACT_ALIGNMENT: ${VOICEACT_ALIGNMENT:-mfa}
+      VOICEACT_MAX_UPLOAD_MB: ${VOICEACT_MAX_UPLOAD_MB:-24}
+      VOICEACT_MAX_CONCURRENCY: ${VOICEACT_MAX_CONCURRENCY:-1}
+      VOICEACT_PRELOAD_MODEL: ${VOICEACT_PRELOAD_MODEL:-true}
+      VOICEACT_PHONEME_SERVICE_URL: http://phonemes:8020
+      VOICEACT_PHONEME_SERVICE_TOKEN: ${VOICEACT_INTERNAL_TOKEN:?Set VOICEACT_INTERNAL_TOKEN in .env}
+      VOICEACT_PHONEME_TIMEOUT_SECONDS: ${VOICEACT_PHONEME_TIMEOUT_SECONDS:-12}
+      VOICEACT_INTERNAL_TOKEN: ${VOICEACT_INTERNAL_TOKEN:?Définissez VOICEACT_INTERNAL_TOKEN dans le fichier .env}
+      HF_HOME: /models/huggingface
+      XDG_CACHE_HOME: /models/cache
+      TORCH_HOME: /models/torch
+    expose:
+      - "8000"
+    volumes:
+      - speech-models:/models
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://127.0.0.1:8000/health/ready"]
+      interval: 15s
+      timeout: 5s
+      start_period: 1800s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    stop_grace_period: 30s
+
+  app:
+    image: voiceact-app:${VOICEACT_RELEASE:-local}
+    build:
+      context: .
+    restart: unless-stopped
+    init: true
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    depends_on:
+      speech:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      VOICEACT_TRANSCRIPTION_PROVIDER: local
+      VOICEACT_SPEECH_SERVICE_URL: http://speech:8000
+      VOICEACT_SPEECH_SERVICE_TOKEN: ${VOICEACT_INTERNAL_TOKEN:?Définissez VOICEACT_INTERNAL_TOKEN dans le fichier .env}
+      VOICEACT_ALLOW_OPENAI_FALLBACK: ${VOICEACT_ALLOW_OPENAI_FALLBACK:-false}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      - "${VOICEACT_BIND_ADDRESS:-127.0.0.1}:${VOICEACT_PORT:-3100}:3000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    stop_grace_period: 20s
+
+volumes:
+  speech-models:

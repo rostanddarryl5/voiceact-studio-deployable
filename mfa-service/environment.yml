@@ -1,0 +1,12 @@
+name: voiceact-mfa
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - montreal-forced-aligner=3.4
+  - ffmpeg
+  - fastapi>=0.115
+  - uvicorn>=0.34
+  - python-multipart>=0.0.20
+  - httpx>=0.28

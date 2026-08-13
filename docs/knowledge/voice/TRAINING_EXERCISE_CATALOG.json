@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-07-17",
+  "scope": "training for healthy voices; not diagnosis or treatment",
+  "evidenceTiers": {
+    "A": "systematic review, research synthesis or robust institutional guidance",
+    "B": "peer-reviewed empirical evidence or precisely documented protocol",
+    "C": "structured professional voice and speech pedagogy",
+    "H": "VoiceAct product hypothesis requiring validation before high scoring weight",
+    "R": "restricted to qualified or certified clinical supervision"
+  },
+  "safety": {
+    "stopConditions": [
+      "pain",
+      "marked hoarseness",
+      "loss of voice",
+      "unexpected breathing difficulty",
+      "increasing effort during the exercise"
+    ],
+    "forbiddenGeneralChallenges": [
+      "screaming",
+      "prolonged whispering",
+      "forced pitch extremes",
+      "maximum-duration breath holding",
+      "clinical treatment claims"
+    ]
+  },
+  "exercises": [
+    {"id":"H01","category":"health","name":"Vocal check-in","evidence":"A","game":"three safety lights","durationSec":15,"metrics":["self_report_fatigue","self_report_pain"],"scored":false},
+    {"id":"H02","category":"warmup","name":"Posture and shoulder release","evidence":"C","game":"follow the animated coach","durationSec":45,"metrics":["completion"],"scored":false},
+    {"id":"H03","category":"warmup","name":"Steady airflow","evidence":"B","game":"keep a virtual feather floating","durationSec":30,"metrics":["exhalation_duration","airflow_proxy_stability"],"scored":true},
+    {"id":"H04","category":"warmup","name":"Lip trill","evidence":"B","game":"power a small motor with a lip buzz","durationSec":30,"metrics":["voicing_continuity","f0_continuity","break_count"],"scored":true},
+    {"id":"H05","category":"warmup","name":"Straw sustained phonation","evidence":"A","game":"hold a light beam steady","durationSec":35,"metrics":["f0_stability","hnr","break_count","self_report_effort"],"scored":true},
+    {"id":"H06","category":"warmup","name":"Straw pitch glide","evidence":"A","game":"fly a rocket along a gentle curve","durationSec":35,"metrics":["normalized_f0_contour","range_semitones","break_count"],"scored":true},
+    {"id":"H07","category":"warmup","name":"Resonant humming ladder","evidence":"B","game":"move vibration from hum to syllable to phrase","durationSec":60,"metrics":["continuity","hnr","self_report_ease"],"scored":true},
+    {"id":"H08","category":"warmup","name":"Yawn-sigh","evidence":"B","game":"softly land a descending phrase","durationSec":35,"metrics":["f0_slope","hard_onset_proxy","self_report_effort"],"scored":true},
+    {"id":"A01","category":"articulation","name":"Articulator map","evidence":"C","game":"discover speech gesture locations","durationSec":90,"metrics":["target_sound_presence","self_report_awareness"],"scored":false},
+    {"id":"A02","category":"articulation","name":"French consonant contrasts","evidence":"C","game":"choose and reproduce the heard pair","durationSec":75,"metrics":["phoneme_substitutions","voicing_contrast"],"scored":true},
+    {"id":"A03","category":"articulation","name":"Pa-ta-ka sequence","evidence":"C","game":"three clean tempo gates","durationSec":45,"metrics":["sequence_accuracy","regularity","rate"],"scored":true,"note":"not a clinical diadochokinetic test"},
+    {"id":"A04","category":"articulation","name":"Overarticulate then naturalize","evidence":"C","game":"keep clarity while removing exaggeration","durationSec":60,"metrics":["phoneme_accuracy","intelligibility_change"],"scored":true},
+    {"id":"A05","category":"articulation","name":"Progressive tongue twister","evidence":"C","game":"precision combo at three tempos","durationSec":60,"metrics":["word_accuracy","phoneme_accuracy","rate_degradation"],"scored":true},
+    {"id":"A06","category":"articulation","name":"Omnish improvisation","evidence":"C","game":"communicate an intention in an invented language","durationSec":60,"metrics":["f0_contrast","energy_contrast","rhythm_contrast"],"scored":true,"lexicalScore":false},
+    {"id":"A07","category":"articulation","name":"Final consonant catch","evidence":"C","game":"catch disappearing endings","durationSec":60,"metrics":["final_phoneme_omissions"],"scored":true},
+    {"id":"P01","category":"prosody","name":"Rate gearbox","evidence":"H","game":"switch between calm, conversational and dynamic gears","durationSec":60,"metrics":["local_wpm","syllable_duration","phoneme_accuracy"],"scored":true},
+    {"id":"P02","category":"prosody","name":"Meaningful pauses","evidence":"B","game":"land pauses on intention boundaries","durationSec":60,"metrics":["pause_onset_error_ms","pause_duration_error_ms"],"scored":true},
+    {"id":"P03","category":"prosody","name":"Breath groups","evidence":"C","game":"segment a paragraph into meaning units","durationSec":75,"metrics":["inhalation_positions","phrase_end_positions"],"scored":true},
+    {"id":"P04","category":"prosody","name":"Contrastive stress","evidence":"B","game":"move the meaning by moving the stressed word","durationSec":75,"metrics":["target_energy_peak","target_duration_ratio","target_f0_excursion"],"scored":true},
+    {"id":"P05","category":"prosody","name":"Rhythmic accent imitation","evidence":"B","game":"copy a rhythm then transfer it to speech","durationSec":60,"metrics":["rhythm_alignment","stress_alignment","flow_stability"],"scored":true},
+    {"id":"P06","category":"prosody","name":"Chant to speech","evidence":"B","game":"reduce a melodic pattern into expressive speech","durationSec":60,"metrics":["melodic_range_reduction","rhythm_retention"],"scored":true},
+    {"id":"P07","category":"prosody","name":"Intonation curves","evidence":"B","game":"trace rise, fall, suspension and rise-fall","durationSec":60,"metrics":["normalized_f0_dtw","turning_point_error_ms"],"scored":true},
+    {"id":"V01","category":"intensity","name":"Controlled intensity ladder","evidence":"C","game":"confidence, conversation, projection","durationSec":45,"metrics":["relative_rms_db","phoneme_accuracy","self_report_effort"],"scored":true},
+    {"id":"V02","category":"resonance","name":"Hum to resonant phrase","evidence":"B","game":"carry easy vibration into words","durationSec":60,"metrics":["continuity","hnr","self_report_ease"],"scored":true},
+    {"id":"V03","category":"intensity","name":"Intentional crescendo","evidence":"C","game":"place the energy peak on the motor word","durationSec":60,"metrics":["energy_envelope_match","peak_position_error_ms"],"scored":true},
+    {"id":"I01","category":"acting","name":"One phrase five intentions","evidence":"C","game":"draw five intention cards","durationSec":90,"metrics":["within_speaker_f0_contrast","within_speaker_energy_contrast","rate_contrast","pause_contrast"],"scored":true},
+    {"id":"I02","category":"acting","name":"Professional shadowing","evidence":"C","game":"follow a licensed reference on the prompt timeline","durationSec":90,"metrics":["word_timing_error_ms","phoneme_timing_error_ms","normalized_f0_dtw","energy_envelope_match","pause_error_ms"],"scored":true},
+    {"id":"I03","category":"acting","name":"Listen remember replay","evidence":"C","game":"rebuild intention after the text disappears","durationSec":75,"metrics":["prosodic_structure_similarity","direction_criteria"],"scored":true,"timbreImitation":false},
+    {"id":"I04","category":"acting","name":"Hidden subtext","evidence":"H","game":"reveal a secret intention without changing words","durationSec":90,"metrics":["within_speaker_contrast","direction_criteria"],"scored":true},
+    {"id":"I05","category":"acting","name":"Intention switch","evidence":"C","game":"change intention at an exact marker","durationSec":75,"metrics":["switch_latency_ms","acoustic_contrast","word_accuracy"],"scored":true},
+    {"id":"I06","category":"dubbing","name":"Synchronized licensed line","evidence":"C","game":"match entry, exit, pauses and intention","durationSec":90,"metrics":["entry_error_ms","exit_error_ms","phoneme_accuracy","normalized_f0_dtw","energy_envelope_match"],"scored":true},
+    {"id":"I07","category":"creator_voiceover","name":"Hook body conclusion","evidence":"C","game":"change delivery with the function of each section","durationSec":90,"metrics":["section_rate_contrast","section_energy_contrast","stress_alignment","pause_alignment"],"scored":true}
+  ],
+  "excludedOrRestricted": [
+    {"name":"Pen or pencil in the mouth","status":"excluded_from_core","reason":"insufficient basis for a validated claim; use object-free overarticulation instead"},
+    {"name":"LSVT LOUD","status":"R","reason":"condition-specific treatment delivered by trained clinicians"},
+    {"name":"Expiratory Muscle Strength Training","status":"R","reason":"requires calibrated equipment and need-specific clinical selection"},
+    {"name":"Full Vocal Function Exercises protocol","status":"R","reason":"dosage and target should be selected by a qualified professional when used therapeutically"}
+  ],
+  "sources": [
+    "https://www.nidcd.nih.gov/health/taking-care-your-voice",
+    "https://www.asha.org/practice-portal/clinical-topics/voice-disorders/",
+    "https://pubmed.ncbi.nlm.nih.gov/29108674/",
+    "https://pubmed.ncbi.nlm.nih.gov/35400555/",
+    "https://pubmed.ncbi.nlm.nih.gov/30819608/",
+    "https://www.vasta.org/content.aspx?club_id=516524&module_id=724586&page_id=22",
+    "https://ktspeechwork.org/about-the-work/"
+  ]
+}

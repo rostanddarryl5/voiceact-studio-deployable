@@ -1,0 +1,17 @@
+.git
+.next
+.tmp-engine-test
+node_modules
+output
+speech-service/.venv
+speech-service/.model-cache
+speech-service/.pytest_cache
+speech-service/__pycache__
+speech-service/**/__pycache__
+**/.pytest_cache
+**/*.pyc
+*.log
+.env
+.env.local
+.env.production
+docs

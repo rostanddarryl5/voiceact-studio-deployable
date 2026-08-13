@@ -1,0 +1,933 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T02:04:39Z",
+  "hardLimitBytes": 5368709120,
+  "downloadedPackBytes": 2243521,
+  "selectionPolicy": {
+    "calibrationProfile": "The learner's sex/register calibrates acoustic ranges only.",
+    "examplePreference": "Example voice preference is stored separately and may be feminine, masculine, or alternating.",
+    "legal": "Only commercially compatible files are shipped. Non-commercial emotion corpora are excluded.",
+    "quality": "MLS is open narration, not certified professional acting. SIWIS is verified professional voice talent."
+  },
+  "coverage": {
+    "availableNow": {
+      "articulation": [
+        "feminine",
+        "masculine"
+      ],
+      "rhythm": [
+        "feminine",
+        "masculine"
+      ],
+      "narration": [
+        "feminine",
+        "masculine"
+      ],
+      "storytelling": [
+        "feminine",
+        "masculine"
+      ],
+      "intonationProfessional": [
+        "feminine"
+      ],
+      "emphasisProfessional": [
+        "feminine"
+      ]
+    },
+    "commissionRequiredFrenchProfessional": {
+      "dubbingFilmSeries": [
+        "feminine",
+        "masculine"
+      ],
+      "animation": [
+        "feminine",
+        "masculine"
+      ],
+      "videoGame": [
+        "feminine",
+        "masculine"
+      ],
+      "advertisingUgc": [
+        "feminine",
+        "masculine"
+      ],
+      "newsJournalism": [
+        "feminine",
+        "masculine"
+      ],
+      "horrorSuspense": [
+        "feminine",
+        "masculine"
+      ],
+      "shortDynamic": [
+        "feminine",
+        "masculine"
+      ]
+    }
+  },
+  "entries": [
+    {
+      "id": "mls-fr-1406_1028_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "1406",
+      "displayVoice": "MLS-FR M1",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "pendant le second siècle je fis serment d'ouvrir tous les trésors de la terre à quiconque me mettrait en liberté mais je ne fus pas plus heureux dans le troisième je promis de faire puissant monarque mon libérateur d'être toujours près de lui en esprit",
+      "localPath": "/references/voice-pack/mls-fr/masculine/1406_1028_000000.opus",
+      "bytes": 71137,
+      "sha256": "d23790461cd6c2d451c00385fc960db094ca0628754c56f991b507d2b63fcdc1",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-1406_1028_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "1406",
+      "displayVoice": "MLS-FR M1",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "la nuit suivante appela sa soeur quand il en fut temps si vous ne dormez pas ma soeur lui dit-elle je vous prie en attendant le jour qui paraîtra bientôt de continuer le conte du pêcheur",
+      "localPath": "/references/voice-pack/mls-fr/masculine/1406_1028_000002.opus",
+      "bytes": 54340,
+      "sha256": "cf88210f3f2fab879da5c9a14f25a535d56a0cfdefdce27b8a8c79d598f2eb7c",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-1406_1028_000003",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "1406",
+      "displayVoice": "MLS-FR M1",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "à l'aspect d'un monstre d'une grandeur si démesurée le pêcheur voulut prendre la fuite mais il se trouva si troublé et si effrayé qu'il ne put marcher salomon",
+      "localPath": "/references/voice-pack/mls-fr/masculine/1406_1028_000003.opus",
+      "bytes": 46317,
+      "sha256": "f486870f0bbfa03fac7a41b9183191eddfb661f18fb0a4d4fa1b3820354f68b5",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-1406_1028_000004",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "1406",
+      "displayVoice": "MLS-FR M1",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "le sultan qui n'avait pas moins d'envie que dinarzade d'entendre la fin de ce conte différa encore la mort de la sultane fin de la dixième nuit cet enregistrement fait partie du domaine public",
+      "localPath": "/references/voice-pack/mls-fr/masculine/1406_1028_000004.opus",
+      "bytes": 75221,
+      "sha256": "467ae5efc7d0db51d0376619d481474708d857e955884d2202ca4d61a8437586",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-296_1028_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "296",
+      "displayVoice": "MLS-FR M2",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "lorsqu'il eut achevé ce repas frugal comme il était bon musulman il se lava les mains le visage et les pieds et fit sa prière",
+      "localPath": "/references/voice-pack/mls-fr/masculine/296_1028_000000.opus",
+      "bytes": 48030,
+      "sha256": "04198eb49fc0ab5267df576cb9f0b16ccf6d3003afdf68bdbd6505281833d33c",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-296_1028_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "296",
+      "displayVoice": "MLS-FR M2",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "le sultan touché de compassion de le voir en cet état le pria très instamment de lui dire le sujet d'une si grande douleur",
+      "localPath": "/references/voice-pack/mls-fr/masculine/296_1028_000001.opus",
+      "bytes": 49457,
+      "sha256": "f6cc924f7c141a870e85fbddf8a6545531a747e1e8ac99025698d46e2b086c9c",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-296_1028_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "296",
+      "displayVoice": "MLS-FR M2",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "la tristesse était peinte sur son visage le sultan s'approcha de lui et le salua le jeune homme lui rendit son salut en lui faisant une inclination de tête fort basse et comme il ne se levait pas",
+      "localPath": "/references/voice-pack/mls-fr/masculine/296_1028_000002.opus",
+      "bytes": 71975,
+      "sha256": "4a26354556dd49ae7ed80ef2ac7de4afd230b1207f908d5ad55404cdfc83d9bb",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-296_1028_000003",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "296",
+      "displayVoice": "MLS-FR M2",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "c'était une infinité d'oiseaux qui y remplissaient l'air de leurs chants harmonieux et qui y faisaient toujours leur demeure parce que des filets tendus au-dessus des arbres et du palais les empêchaient d'en sortir",
+      "localPath": "/references/voice-pack/mls-fr/masculine/296_1028_000003.opus",
+      "bytes": 78419,
+      "sha256": "000ddb04a9e253df440c43c9ae2e9e28128d464997f5538af3757280aff34ded",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2216_1259_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2216",
+      "displayVoice": "MLS-FR M3",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "puis sur ce charmant ensemble la fleur de la jeunesse était répandue avec tout son éclat et tout son parfum haydée pouvait avoir dix-neuf ou vingt ans monte cristo appela la suivante grecque et fit demander à haydée la permission d'entrer auprès d'elle",
+      "localPath": "/references/voice-pack/mls-fr/masculine/2216_1259_000000.opus",
+      "bytes": 71354,
+      "sha256": "58c984ec3a3470fd2d491ef60ab4a91f7a8d2b5db2a37408fb139f29afcef991",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2216_1259_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2216",
+      "displayVoice": "MLS-FR M3",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "pour toute réponse haydée fit signe à la suivante de relever la tapisserie qui pendait devant la porte dont le chambranle carré encadra la jeune fille couchée comme un charmant tableau monte cristo s'avança",
+      "localPath": "/references/voice-pack/mls-fr/masculine/2216_1259_000001.opus",
+      "bytes": 54143,
+      "sha256": "9b027bbf713724400c7d8bf9d3a5309d66c8ac608ca8e58696e81c409d00028d",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2216_1259_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2216",
+      "displayVoice": "MLS-FR M3",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "quant au bas du corset et au haut du caleçon ils étaient perdus dans une des ceintures aux vives couleurs et aux longues franges soyeuses qui font l'ambition de nos élégantes parisiennes",
+      "localPath": "/references/voice-pack/mls-fr/masculine/2216_1259_000002.opus",
+      "bytes": 47602,
+      "sha256": "14024754bc936e9c27ea58b3386223df6884aeae8296500324ed7657499528e8",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2216_1259_000005",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2216",
+      "displayVoice": "MLS-FR M3",
+      "voiceProfile": "masculine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "qui ne laissait arriver la vapeur à sa bouche que parfumée par l'eau de benjoin à travers laquelle sa douce aspiration la forçait de passer sa pose toute naturelle pour une femme d'orient eût été pour une française d'une coquetterie peut-être un peu affectée",
+      "localPath": "/references/voice-pack/mls-fr/masculine/2216_1259_000005.opus",
+      "bytes": 63295,
+      "sha256": "ba9a309e3220da4d74a801b6b427770fbbe55f76dc680b4a48fed13a18a42d9a",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12977_10625_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12977",
+      "displayVoice": "MLS-FR F1",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "pour une fois dans votre vie vous serez forcé de reconnaître que vous vous êtes trompé la situation est évidemment sur le point de se dénouer elle fut forcée d'interrompre ces agréables réflexions pour donner quelques éclaircissements à harriet",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12977_10625_000000.opus",
+      "bytes": 64618,
+      "sha256": "97129036890c654826c7599ed4db01ad101e538df9e68c930018e0a9f50cc2de",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12977_10625_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12977",
+      "displayVoice": "MLS-FR F1",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "oui papa en effet elle est écrite à la seconde page de notre cahier nous l'avons copiée dans les morceaux choisis elle est de garrick je me rappelle seulement qu'elle commençait par kitty",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12977_10625_000001.opus",
+      "bytes": 52243,
+      "sha256": "a280320633ec7fdeff9ed0e86682486b36919a0e71d9091186208c926abf353f",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12977_10625_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12977",
+      "displayVoice": "MLS-FR F1",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "vous avez toujours raison je suppose je crois j'espère qu'il en est ainsi cette fois encore mais autrement je n'aurais jamais pu imaginer m elton qui pouvait prétendre à la plus brillante des alliances quand je pense à ces vers charmants",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12977_10625_000002.opus",
+      "bytes": 68800,
+      "sha256": "bdf31d45e29943adff8fb96e12b18f6a2b91ca83170aeccec830badf97ec62b3",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12977_10625_000004",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12977",
+      "displayVoice": "MLS-FR F1",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "woodhouse demeura un moment silencieux puis ajouta mais je ne vois pas pourquoi la pauvre isabelle serait obligée de rentrer si tôt à cause de son mari il faut que je la persuade de prolonger son séjour elle pourrait parfaitement rester avec les enfants",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12977_10625_000004.opus",
+      "bytes": 65269,
+      "sha256": "01b61ce777625d0cd538038a0e3b322bdca49eaaff2234fb7e4417889d5a4725",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-10179_11051_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "10179",
+      "displayVoice": "MLS-FR F2",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "c'est bien ennuyeux fin du chapitre vingt quatre enregistré par sonia cet enregistrement fait partie du domaine public",
+      "localPath": "/references/voice-pack/mls-fr/feminine/10179_11051_000000.opus",
+      "bytes": 66570,
+      "sha256": "e12b08dbb8428924681c9161ca25d4a440a1819f741ce5e6100df2f77208323e",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-10179_11051_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "10179",
+      "displayVoice": "MLS-FR F2",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "et le pauvre sapin se sentit si heureux qu'il s'endormit en se figurant qu'on l'avait ramené dans sa forêt fin du chapitre vingt enregistré par sonia cet enregistrement fait partie du domaine public",
+      "localPath": "/references/voice-pack/mls-fr/feminine/10179_11051_000001.opus",
+      "bytes": 84517,
+      "sha256": "c4a13d8f9f8b9bb430c2c019e750d173a99153dbb3887ef67fb33d6f71b28b1e",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-10179_11051_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "10179",
+      "displayVoice": "MLS-FR F2",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "il n'y avait plus dans le vestiaire que les oreilles de l'âne dont il dut se contenter et voilà pourquoi le chameau qui est une bête de grande taille a des oreilles si courtes tandis que l'âne qui est beaucoup plus petit en a de si longues",
+      "localPath": "/references/voice-pack/mls-fr/feminine/10179_11051_000002.opus",
+      "bytes": 70095,
+      "sha256": "c17b30077097e782c0b48471252c7bd2edc68c8f525694dc80851a3bd67f2419",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-10179_11051_000003",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "10179",
+      "displayVoice": "MLS-FR F2",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "chapitre dix de a b c petits contes de jules lemaître enregistré pour librivox point org ibis dans la basse-cour d'un château se trouva parmi toutes sortes de volailles un ibis rose",
+      "localPath": "/references/voice-pack/mls-fr/feminine/10179_11051_000003.opus",
+      "bytes": 66742,
+      "sha256": "48f9eebb023326c1deef658389e350fc13e70203e27ae24e08d4be7417d1614a",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12080_11650_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12080",
+      "displayVoice": "MLS-FR F3",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "les autres provinciaux qui arrivent à paris admirent tout pensait le marquis celui-ci hait tout ils ont trop d'affectation lui n'en a pas assez et les sots le prennent pour un sot",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12080_11650_000000.opus",
+      "bytes": 48935,
+      "sha256": "c0fbe432b2cc6bdad2b5b39ed0823a17aa73dbfc33ccb9bce95435687d1406b5",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12080_11650_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12080",
+      "displayVoice": "MLS-FR F3",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "pauvre m gros c'est lui qui méritait la croix c'est moi qui l'ai et je dois agir dans le sens du gouvernement qui me la donne chapitre",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12080_11650_000001.opus",
+      "bytes": 62301,
+      "sha256": "e40c696589fe461b956daded0527da4766787908fb1eeb9a1accc9533b3703b6",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12080_11650_000004",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12080",
+      "displayVoice": "MLS-FR F3",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "eh bien ces récits me font plaisir être dans une véritable bataille une bataille de napoléon où l'on tuait dix mille soldats cela prouve du courage s'exposer au danger élève l'âme et la sauve de l'ennui où mes pauvres adorateurs semblent plongés",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12080_11650_000004.opus",
+      "bytes": 67715,
+      "sha256": "8a72a27d006a8f2479ae27de666798605517894b40bfa5257fbf93636f5f1aec",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-12080_11650_000005",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "12080",
+      "displayVoice": "MLS-FR F3",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "il alla demander conseil à l'abbé pirard qui moins poli que le marquis ne lui répondit qu'en sifflant et parlant d'autre chose le lendemain matin julien se présenta au marquis en habit noir avec son portefeuille et ses lettres",
+      "localPath": "/references/voice-pack/mls-fr/feminine/12080_11650_000005.opus",
+      "bytes": 64348,
+      "sha256": "aa602407fa2518e96639fe0bb25cad6419b9bcbd143336e601edc10c0586a468",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2154_1167_000000",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2154",
+      "displayVoice": "MLS-FR F4",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "c'était chez les grecs un usage que sur la mer tous voyageurs menaient avec eux en voyage singes et chiens de bateleurs un navire en cet équipage non loin d'athènes fit naufrage sans les dauphins tout eût péri",
+      "localPath": "/references/voice-pack/mls-fr/feminine/2154_1167_000000.opus",
+      "bytes": 75792,
+      "sha256": "5648a254818620c2f07de99b728a3a1c71fa22497a0761f9c13b8a11604b9933",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2154_1167_000001",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2154",
+      "displayVoice": "MLS-FR F4",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "comme elle disait ces mots le loup de fortune passe il les recueille à propos et les garde en sa mémoire la bique comme on peut croire n'avait pas vu le glouton",
+      "localPath": "/references/voice-pack/mls-fr/feminine/2154_1167_000001.opus",
+      "bytes": 71518,
+      "sha256": "37c79abc87b8f46c6ad467b0c1cdfe847467b9ae0212be9cf4a0467b3b2cd8f7",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2154_1167_000002",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2154",
+      "displayVoice": "MLS-FR F4",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "eux repus tout s'endort les petits et la mère l'aube du jour arrive et d'amis point du tout l'alouette à l'essor le maître s'en vient faire sa ronde ainsi qu'à l'ordinaire",
+      "localPath": "/references/voice-pack/mls-fr/feminine/2154_1167_000002.opus",
+      "bytes": 72656,
+      "sha256": "340b899307b61e918c2a05cdf44a74140867ddb576dff0443e93173d1c8a81b8",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "mls-fr-2154_1167_000003",
+      "corpus": "Multilingual LibriSpeech French",
+      "speakerId": "2154",
+      "displayVoice": "MLS-FR F4",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "audited_open_narration",
+      "professionalActorVerified": false,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "narration",
+        "storytelling"
+      ],
+      "excludedClaims": [
+        "professional_actor",
+        "acted_emotion",
+        "advertising_delivery",
+        "dubbing_performance"
+      ],
+      "transcript": "dès lors que ce dessein fut su de l'alouette c'est ce coup qu'il est bon de partir mes enfants et les petits en même temps voletants se culbutants délogèrent tous sans trompette",
+      "localPath": "/references/voice-pack/mls-fr/feminine/2154_1167_000003.opus",
+      "bytes": 68986,
+      "sha256": "b0799c0aacacd2fc95c86ba7ab51aa762fede68d9af643fef28e2253fd88c96d",
+      "sourceUrl": "https://www.openslr.org/94/",
+      "datasetUrl": "https://huggingface.co/datasets/facebook/multilingual_librispeech",
+      "license": "CC BY 4.0",
+      "attribution": "Pratap et al., Multilingual LibriSpeech; original recordings from LibriVox"
+    },
+    {
+      "id": "siwis-emph-book-s01-0001",
+      "corpus": "SIWIS French Speech Synthesis Database",
+      "displayVoice": "SIWIS Pro F1",
+      "voiceProfile": "feminine",
+      "language": "fr-FR",
+      "sourceTier": "professional_voice_talent",
+      "professionalActorVerified": true,
+      "allowedUses": [
+        "articulation",
+        "rhythm",
+        "intonation",
+        "emphasis",
+        "narration"
+      ],
+      "transcript": "Et qu'il le veuille ou non, nous reviendrons vers le nord, c'est-a-dire au pays des honnetes gens.",
+      "localPath": "/references/siwis/emph_book_s01_0001.wav",
+      "bytes": 441126,
+      "sha256": "ca4dab1b61f0f6d56cfa08d3deb3355a6742e4f96539787111c99e1979bc042a",
+      "sourceUrl": "https://datashare.ed.ac.uk/items/1de74991-eede-4b48-8fbe-6c2abaed88d8",
+      "license": "CC BY 4.0",
+      "attribution": "Yamagishi, Honnet, Garner and Lazaridis; University of Edinburgh CSTR"
+    }
+  ]
+}
