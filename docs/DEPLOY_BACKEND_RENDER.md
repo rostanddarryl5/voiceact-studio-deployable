@@ -41,7 +41,7 @@ Cette architecture évite de payer et maintenir deux services séparés dès le 
 Le fichier `render.yaml` prévoit :
 
 ```text
-VOICEACT_MODEL_SIZE=small
+VOICEACT_MODEL_SIZE=tiny
 VOICEACT_DEVICE=cpu
 VOICEACT_COMPUTE_TYPE=int8
 VOICEACT_ALIGNMENT=mfa
@@ -99,7 +99,7 @@ doit passer de `degraded/offline` à `ready/standard` ou `ready/advanced`.
 
 ## Notes réalistes
 
-- `small` donne une meilleure qualité que `tiny`, mais consomme plus de RAM.
-- Si Render manque de mémoire, passer temporairement `VOICEACT_MODEL_SIZE=tiny`.
+- La version gratuite Render démarre avec `tiny` pour éviter la carte bancaire et limiter la RAM.
+- Pour le vrai moteur VoiceAct, repasser ensuite à `small` ou mieux quand on prend un plan payant.
 - Le premier démarrage peut être long.
 - Pour un vrai SaaS, il faudra ensuite ajouter une file d’attente, une limite par utilisateur, et du stockage durable des prises audio.

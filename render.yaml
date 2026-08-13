@@ -2,20 +2,16 @@ services:
   - type: web
     name: voiceact-analysis
     runtime: docker
-    plan: starter
+    plan: free
     region: frankfurt
     dockerfilePath: ./Dockerfile.analysis
     dockerContext: .
     healthCheckPath: /health/ready
-    disk:
-      name: voiceact-analysis-models
-      mountPath: /models
-      sizeGB: 10
     envVars:
       - key: VOICEACT_INTERNAL_TOKEN
         sync: false
       - key: VOICEACT_MODEL_SIZE
-        value: small
+        value: tiny
       - key: VOICEACT_DEVICE
         value: cpu
       - key: VOICEACT_COMPUTE_TYPE
