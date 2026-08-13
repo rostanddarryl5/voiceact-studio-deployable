@@ -13,7 +13,7 @@ services:
       sizeGB: 10
     envVars:
       - key: VOICEACT_INTERNAL_TOKEN
-        generateValue: true
+        sync: false
       - key: VOICEACT_MODEL_SIZE
         value: small
       - key: VOICEACT_DEVICE

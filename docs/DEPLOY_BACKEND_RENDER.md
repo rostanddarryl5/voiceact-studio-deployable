@@ -49,13 +49,13 @@ VOICEACT_MAX_CONCURRENCY=1
 VOICEACT_PRELOAD_MODEL=false
 ```
 
-Render doit aussi générer :
+Render doit aussi demander :
 
 ```text
 VOICEACT_INTERNAL_TOKEN
 ```
 
-Garde cette valeur secrète : elle sert à protéger l’API vocale.
+Colle une valeur longue et garde-la secrète : elle sert à protéger l’API vocale et devra être recopiée côté Vercel.
 
 ## Raccorder Vercel après le déploiement Render
 
