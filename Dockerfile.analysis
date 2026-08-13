@@ -1,64 +1,36 @@
 # syntax=docker/dockerfile:1.7
-FROM mambaorg/micromamba:2.6.2
-
-ARG MAMBA_DOCKERFILE_ACTIVATE=1
+FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
-    MFA_ROOT_DIR=/models \
-    HF_HOME=/models/huggingface \
-    XDG_CACHE_HOME=/models/cache \
-    TORCH_HOME=/models/torch \
+    HF_HOME=/tmp/voiceact/huggingface \
+    XDG_CACHE_HOME=/tmp/voiceact/cache \
+    TORCH_HOME=/tmp/voiceact/torch \
+    VOICEACT_MODEL_SIZE=tiny \
     VOICEACT_DEVICE=cpu \
     VOICEACT_COMPUTE_TYPE=int8 \
-    VOICEACT_ALIGNMENT=mfa \
-    VOICEACT_PHONEME_SERVICE_URL=http://127.0.0.1:8020 \
-    VOICEACT_PHONEME_TIMEOUT_SECONDS=20 \
+    VOICEACT_ALIGNMENT=off \
     VOICEACT_MAX_CONCURRENCY=1 \
     VOICEACT_PRELOAD_MODEL=false \
     PORT=8000
 
-USER root
-RUN mkdir -p /models/huggingface /models/cache /models/torch \
-    && chown -R mambauser:mambauser /models
-USER mambauser
-
-RUN printf '%s\n' \
-    'repodata_use_shards: false' \
-    'repodata_threads: 2' \
-    'fetch_threads: 2' \
-    'channels:' \
-    '  - conda-forge' \
-    '  - nodefaults' \
-    > /home/mambauser/.mambarc
-
-COPY --chown=mambauser:mambauser mfa-service/environment.yml /tmp/environment.yml
-RUN micromamba install --yes --name base --file /tmp/environment.yml \
-    && micromamba clean --all --yes
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg libgomp1 \
+    && rm -rf /var/lib/apt/lists/* \
+    && mkdir -p /tmp/voiceact/huggingface /tmp/voiceact/cache /tmp/voiceact/torch
 
 WORKDIR /service
-COPY --chown=mambauser:mambauser speech-service/requirements.txt /tmp/speech-requirements.txt
-RUN micromamba run -n base pip install --retries 10 --timeout 120 -r /tmp/speech-requirements.txt
 
-# Bake the French MFA models into the image so cold starts don't depend on MFA downloads.
-RUN mfa model download acoustic french_mfa \
-    && mfa model download dictionary french_mfa \
-    && mfa model download g2p french_mfa
+COPY speech-service/requirements.txt /tmp/speech-requirements.txt
+RUN pip install --no-cache-dir --retries 10 --timeout 120 -r /tmp/speech-requirements.txt
 
-COPY --chown=mambauser:mambauser speech-service ./speech-service
-COPY --chown=mambauser:mambauser mfa-service ./mfa-service
-COPY --chown=mambauser:mambauser deploy/start-analysis.sh ./start-analysis.sh
+COPY speech-service ./speech-service
 
-USER root
-RUN mkdir -p /models \
-    && chown -R mambauser:mambauser /models /service \
-    && chmod +x /service/start-analysis.sh
-
-USER mambauser
 EXPOSE 8000
 
-HEALTHCHECK --interval=20s --timeout=10s --start-period=120s --retries=6 \
-  CMD micromamba run -n base python -c "import os, urllib.request; urllib.request.urlopen(f'http://127.0.0.1:{os.getenv(\"PORT\", \"8000\")}/health/ready', timeout=8)" || exit 1
+HEALTHCHECK --interval=20s --timeout=10s --start-period=90s --retries=6 \
+  CMD python -c "import os, urllib.request; urllib.request.urlopen(f'http://127.0.0.1:{os.getenv(\"PORT\", \"8000\")}/health/ready', timeout=8)" || exit 1
 
-CMD ["/service/start-analysis.sh"]
+WORKDIR /service/speech-service
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1 --proxy-headers"]

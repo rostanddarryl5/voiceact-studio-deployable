@@ -17,9 +17,7 @@ services:
       - key: VOICEACT_COMPUTE_TYPE
         value: int8
       - key: VOICEACT_ALIGNMENT
-        value: mfa
-      - key: VOICEACT_PHONEME_SERVICE_URL
-        value: http://127.0.0.1:8020
+        value: off
       - key: VOICEACT_PHONEME_TIMEOUT_SECONDS
         value: "20"
       - key: VOICEACT_MAX_CONCURRENCY
@@ -29,10 +27,8 @@ services:
       - key: VOICEACT_MAX_UPLOAD_MB
         value: "24"
       - key: HF_HOME
-        value: /models/huggingface
+        value: /tmp/voiceact/huggingface
       - key: XDG_CACHE_HOME
-        value: /models/cache
+        value: /tmp/voiceact/cache
       - key: TORCH_HOME
-        value: /models/torch
-      - key: MFA_ROOT_DIR
-        value: /models
+        value: /tmp/voiceact/torch
